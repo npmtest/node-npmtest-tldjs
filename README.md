@@ -1,6 +1,6 @@
 # npmtest-tldjs
 
-#### test coverage for  [tldjs (v1.7.0)](https://github.com/oncletom/tld.js)  [![npm package](https://img.shields.io/npm/v/npmtest-tldjs.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tldjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tldjs.svg)](https://travis-ci.org/npmtest/node-npmtest-tldjs)
+#### basic test coverage for  [tldjs (v1.7.0)](https://github.com/oncletom/tld.js)  [![npm package](https://img.shields.io/npm/v/npmtest-tldjs.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tldjs) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tldjs.svg)](https://travis-ci.org/npmtest/node-npmtest-tldjs)
 
 #### JavaScript API to work against complex domain names, subdomains and URIs.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-tldjs/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-tldjs/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-tldjs/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-tldjs/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-tldjs/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-tldjs/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-tldjs/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-tldjs/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-tldjs/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-tldjs/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-tldjs/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-tldjs/build/coverage.html/index.html)
 
@@ -130,7 +130,8 @@
             "publicsuffix-org": "https://publicsuffix.org/list/effective_tld_names.dat"
         }
     },
-    "version": "1.7.0"
+    "version": "1.7.0",
+    "bin": {}
 }
 ```
 
