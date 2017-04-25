@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for node-npmtest-tldjs/node_modules/tldjs/lib/updater.js</title>
+    <title>Code coverage report for node-npmtest-tldjs/node_modules/tldjs/bin/postinstall.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,23 +194,23 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-tldjs">npmtest-tldjs (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-tldjs/node_modules/tldjs/lib/updater.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-tldjs/node_modules/tldjs/bin/postinstall.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">29.63% <small>(8 / 27)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">30% <small>(3 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">0% <small>(0 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">25% <small>(1 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">0% <small>(0 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">0% <small>(0 / 1)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">29.63% <small>(8 / 27)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">30% <small>(3 / 10)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-tldjs/node_modules/tldjs/lib/</a> &#187; updater.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-tldjs/node_modules/tldjs/bin/</a> &#187; postinstall.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
@@ -234,138 +234,51 @@
 18
 19
 20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
+21</td><td class="line-coverage"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">//#!/usr/bin/env node
 &nbsp;
-var join = require('path').join;
-var http = require('https');
-var fs = require('fs');
+var updater = require('./update.js');
+var SHOULD_UPDATE = process.env.npm_config_tldjs_update_rules === 'true';
 &nbsp;
-var pkg = require('../package.json');
 &nbsp;
-var providerUrl = pkg.tldjs.providers['publicsuffix-org'];
-var parser = require('./parsers/publicsuffix-org.js');
-var exportTask = require('./exports/standard-json.js');
+<span class="missing-if-branch" title="if path not taken" >I</span>if (SHOULD_UPDATE) {
+<span class="cstat-no" title="statement not covered" >  console.log('tldjs: updating rules from %s.', updater.providerUrl);</span>
 &nbsp;
-module.exports = {
-  providerUrl: providerUrl,
-  run: <span class="fstat-no" title="function not covered" >function runUpdater(done){</span>
-<span class="cstat-no" title="statement not covered" >    done = typeof done === 'function' ? done : <span class="fstat-no" title="function not covered" >function(){</span>};</span>
+<span class="cstat-no" title="statement not covered" >  updater.run(<span class="fstat-no" title="function not covered" >function(err){</span></span>
+<span class="cstat-no" title="statement not covered" >    if (err) {</span>
+<span class="cstat-no" title="statement not covered" >      console.error(err.message);</span>
+<span class="cstat-no" title="statement not covered" >      process.exit(err.code);</span>
+    }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var req = http.request(providerUrl, <span class="fstat-no" title="function not covered" >function (res) {</span></span>
-<span class="cstat-no" title="statement not covered" >      var body = '';</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >      if (res.statusCode !== 200) {</span>
-<span class="cstat-no" title="statement not covered" >        res.destroy();</span>
-<span class="cstat-no" title="statement not covered" >        return done(new Error('tldjs: remote server responded with HTTP status ' + res.statusCode));</span>
-      }
-&nbsp;
-<span class="cstat-no" title="statement not covered" >      res.setEncoding('utf8');</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >      res.on('data', <span class="fstat-no" title="function not covered" >function(d) {</span></span>
-<span class="cstat-no" title="statement not covered" >        body += d;</span>
-      });
-&nbsp;
-<span class="cstat-no" title="statement not covered" >      res.on('end', <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >        var tlds = parser.parse(body);</span>
-<span class="cstat-no" title="statement not covered" >        var task_result = exportTask(tlds);</span>
-<span class="cstat-no" title="statement not covered" >        var filename = task_result[0];</span>
-<span class="cstat-no" title="statement not covered" >        var data = task_result[1];</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        data = JSON.stringify(data);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        fs.writeFile(join(__dirname, '..', filename), data, 'utf-8', done);</span>
-      });
-    });
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    req.setTimeout(5000);</span>
-<span class="cstat-no" title="statement not covered" >    req.on('error', done);</span>
-<span class="cstat-no" title="statement not covered" >    req.end();</span>
-  }
-};
+<span class="cstat-no" title="statement not covered" >    console.log('tldjs: rules list updated.');</span>
+<span class="cstat-no" title="statement not covered" >    process.exit(0);</span>
+  });
+}
 &nbsp;
 &nbsp;</pre></td></tr>
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 10:28:55 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 12:47:20 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
